@@ -13,10 +13,10 @@ class App extends Component {
       showUnity: true,
     };
     this.unityContext = new UnityContext({
-      codeUrl: "/Build/clock-test-build.wasm",
-      frameworkUrl: "/Build/clock-test-build.framework.js",
-      dataUrl: "/Build/clock-test-build.data",
-      loaderUrl: "/Build/clock-test-build.loader.js",
+      codeUrl: "/Build/init-build.wasm",
+      frameworkUrl: "/Build/init-build.framework.js",
+      dataUrl: "/Build/init-build.data",
+      loaderUrl: "/Build/init-build.loader.js",
     });
     // this.unityContext.on("RotationDidUpdate", (degrees) => {
     //   this.setState({ degrees: Math.round(degrees) });
