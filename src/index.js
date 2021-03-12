@@ -13,10 +13,10 @@ class App extends Component {
       showUnity: true,
     };
     this.unityContext = new UnityContext({
-      codeUrl: "/Build/init-build.wasm",
-      frameworkUrl: "/Build/init-build.framework.js",
-      dataUrl: "/Build/init-build.data",
-      loaderUrl: "/Build/init-build.loader.js",
+      codeUrl: "/Build/init-build-sizeTest.wasm",
+      frameworkUrl: "/Build/init-build-sizeTest.framework.js",
+      dataUrl: "/Build/init-build-sizeTest.data",
+      loaderUrl: "/Build/init-build-sizeTest.loader.js",
     });
     // this.unityContext.on("RotationDidUpdate", (degrees) => {
     //   this.setState({ degrees: Math.round(degrees) });
@@ -29,12 +29,12 @@ class App extends Component {
     return (
       <Fragment>
         <h1>React UnityWebGL</h1>
-        <div>
+        <div className = 'test'>
           {this.state.showUnity === true ? (
             <Unity
               width={"100%"}
               unityContext={this.unityContext}
-              devicePixelRatio={1}
+              devicePixelRatio={2}
             />
           ) : (
             <div />
